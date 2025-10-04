@@ -215,24 +215,6 @@ Let’s set up a minimal demo for each tool to install Nginx on an Ubuntu VM. As
 | **Use Case**           | Quick tasks, startups         | Complex apps, cloud          | Secure, regulated environments|
 | **CLI Command**        | `ansible-playbook`            | `knife`                      | `puppet apply`/`puppet agent`|
 
-## Teaching Tips to Avoid Confusion
-
-- **Start with Analogies:** Use the kitchen metaphor consistently—Ansible as delivery, Chef as head chef, Puppet as manager.
-- **Focus on Core Idea:** All three automate configs; differences are in execution style (push vs. pull, language).
-- **Hands-On Demos:** Run the Nginx example for each tool live. Show outputs side-by-side.
-- **Terminology Trick:** Use the table above as a cheat sheet—pin it up for students.
-- **Avoid Overload:** Teach one tool’s demo first (Ansible for ease), then compare with others.
-- **Interactive Fun:** Ask students to vote: Which tool’s style do they like best? Why?
-
-## Interactive Elements
-- **Question 1:** If you had 10 servers to configure quickly, which tool would you pick and why?
-- **Question 2:** Imagine a recipe to install a game server—what would you include? Write a small playbook/recipe/manifest!
-- **Challenge:** Try running one tool’s Nginx demo on a VM. Then, swap to another tool—spot the differences!
-
-## Troubleshooting
-- **Ansible:** SSH issues? Check password/keys: `ssh ubuntu@192.168.1.100`.
-- **Chef:** Node not converging? Verify `knife.rb` and `admin.pem`.
-- **Puppet:** Cert errors? Clear and re-sign: `puppetserver ca clean --certname chefclient`.
 
 ## Conclusion
 Ansible, Chef, and Puppet are like three chefs cooking the same dish—each has a unique style but gets the job done. Ansible is quick and simple, Chef is flexible for complex apps, and Puppet is secure for big enterprises. With this guide, you’ve got the full picture in one shot. Pick one to master first (try Ansible for ease), then experiment with others. Share your favorite tool in class—happy automating!
